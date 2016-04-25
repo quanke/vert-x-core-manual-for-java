@@ -35,7 +35,7 @@ Vertx vertx = Vertx.vertx(new VertxOptions().setWorkerPoolSize(40));
 
 这是因为不同的 Vert.x 实例在群集中组合在一起，通常需要一些时间 (也许几秒钟) 的。在这段时间，我们不想阻止调用线程，所以我们把结果以异步方式给你。
 
-### 你是傻瓜吗?
+
 
 
 

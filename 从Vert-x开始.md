@@ -37,25 +37,7 @@ Vertx vertx = Vertx.vertx(new VertxOptions().setWorkerPoolSize(40));
 
 ### 你是傻瓜吗?
 
-你可能注意到，在前面使用fluent API（fluent API：流API，更易使用的API，也称傻瓜式API）的例子。
 
-fluent API 是支持链式调用的。例如:
-
-```
-request.response().putHeader("Content-Type", "text/plain").write("some text").end();
-```
-
-整个 Vert.x Api都是这种模式，，所以要去适应它。
-
-可以链式编写代码，当然你也可以按自己的喜欢，写上这样的代码：
-
-
-```
-HttpServerResponse response = request.response();
-response.putHeader("Content-Type", "text/plain");
-response.write("some text");
-response.end();
-```
 
 
 ### 不要call（调用、打电话）我们，我们会call给你。

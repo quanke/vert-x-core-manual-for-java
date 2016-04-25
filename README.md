@@ -27,7 +27,7 @@ Vert.x core 非常小，非常轻量级。只是使用你想要的部分。也�
 
 如果你使用 Maven 或 Gradle，需要增加以下依赖才能使用Vert.x Core API:
 
-* Maven (在你的pom.xml中):
+* Maven (在你的pom.xml中增加):
 
 ```
 <dependency>
@@ -37,7 +37,7 @@ Vert.x core 非常小，非常轻量级。只是使用你想要的部分。也�
 </dependency>
 ```
 
-* Gradle (在您的build.gradle文件):
+* Gradle (在您的build.gradle文件增加):
 
 ```
 compile io.vertx:vertx-core:3.2.0

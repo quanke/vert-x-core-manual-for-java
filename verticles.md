@@ -18,7 +18,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### 在Verticle里访问环境变量。
+#### 
 
 使用 Java API 访问环境变量和系统属性:
 

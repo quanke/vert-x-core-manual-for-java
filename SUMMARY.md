@@ -13,5 +13,5 @@
    * [异步Verticle启动和停止](异步Verticle启动和停止.md)
    * [Verticle类型](Verticle类型.md)
    * [以编程方式部署 verticles](以编程方式部署 verticles.md)
-   * verticle名称映射到一个verticle工厂的规则
+   * [verticle名称映射到一个verticle工厂的规则](verticle名称映射到一个verticle工厂的规则.md)
 

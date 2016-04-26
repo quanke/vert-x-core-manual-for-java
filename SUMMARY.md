@@ -44,5 +44,5 @@
    * [命令行上的集群](Event Bus/命令行上的集群.md)
    * [自动清理 Verticles](Event Bus/自动清理 Verticles .md)
 * [JSON](json.md)
-   * [JSON 对象](JSON /JSON 对象)
+   * [JSON 对象](JSON /JSON 对象 .md)
 

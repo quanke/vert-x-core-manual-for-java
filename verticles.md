@@ -22,7 +22,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 #### 
 
 
-#### Context对象
+#### 
 
 当Vert.x提供一个事件的处理程序或调用[Verticle](http://vertx.io/docs/apidocs/io/vertx/core/Verticle.html)的开始或停止的方法，执行与`Context`相关联。一般Context是event-loop context 绑定特定的事件循环线程。因此，对于这方面的执行总是发生在该完全相同的事件循环线程。在worker verticles和运行内嵌阻止代码worker context的情况下将使用一个线程从worker线程池的执行关联。
 

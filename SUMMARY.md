@@ -25,7 +25,7 @@
    * [从命令行运行 Verticles](verticles/从命令行运行 Verticles.md)
    * [Vert.x 退出](verticles/Vert_x 退出.md)
    * [Context对象](verticles/Context对象.md)
-   * [执行定期和延迟的操作](执行定期和延迟的操作.md)
+   * [执行定期和延迟的操作](verticles/执行定期和延迟的操作.md)
    * [Verticles 自动清理](Verticles 自动清理.md)
 * [事件总线（Event Bus）](事件总线（Event Bus）.md)
    * [理论](Event Bus理论.md)

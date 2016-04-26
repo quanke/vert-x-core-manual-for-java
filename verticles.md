@@ -25,7 +25,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### 配置verticle
+#### 
 
 在部署的时可以传递一个JSON形式的配置给verticle：
 

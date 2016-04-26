@@ -1,5 +1,8 @@
 # Java API 版本的Vert.x Core 手册
 
+- 欢迎关注http://quanke.name/
+- 交流群：`231419585`
+
 源码在[github](https://github.com/eclipse/vert.x)上
 
 Vert.x Core提供的功能：

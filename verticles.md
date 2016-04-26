@@ -22,7 +22,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### Verticle隔离组
+#### 
 
 默认情况下，Vert.x 具有flat classpath。即，当 Vert.x 部署 verticles 使用当前类加载器-它不会创建一个新。在大多数情况下这是最简单、 最明确和理智的事情。
 

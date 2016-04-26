@@ -18,7 +18,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### 取消 verticle 部署
+#### 
 
 部署可以通过[undeploy](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#undeploy-java.lang.String-)取消部署.
 

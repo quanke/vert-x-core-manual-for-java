@@ -14,8 +14,3 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 应用通常是同一个 Vert.x 实例，同时由多个verticle实例组成。不同的verticle实例通过[event bus](http://vertx.io/docs/vertx-core/java/#event_bus)发送消息。
 
-
-
-#### Verticles 自动清理
-
-如果您正在从 verticles 内创建的计时器，这些计时器将被自动关闭verticle undeployed。

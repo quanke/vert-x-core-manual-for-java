@@ -19,12 +19,6 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### 怎么样找到Verticle Factories?
-
-大多数的Verticle factories在 Vert.x 启动时从类路径中加载并注册。
-
-你可以通过编程方式注册和注销Verticle factories，使用[registerVerticleFactory](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#registerVerticleFactory-io.vertx.core.spi.VerticleFactory-)和[unregisterVerticleFactory](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#unregisterVerticleFactory-io.vertx.core.spi.VerticleFactory-)。
-
 #### 等待部署完成
 
 Verticle部署是异步的，可能部署完成后才返回。

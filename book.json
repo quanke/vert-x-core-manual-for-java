@@ -2,5 +2,7 @@
     "plugins": [
         "layout"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+      
+    }
 }

@@ -39,4 +39,5 @@
    * [发送超时](Event Bus/发送超时.md)
    * [发送失败](Event Bus/发送失败.md)
    * [消息编解码器](Event Bus/消息编解码器.md)
+   * 群集Event Bus
 

@@ -17,7 +17,7 @@
    * [怎么样找到Verticle Factories?](verticles/怎么样找到Verticle Factories.md)
    * [等待部署完成](verticles/等待部署完成.md)
    * [取消 verticle 部署](verticles/取消 verticle 部署.md)
-   * [指定verticle实例数](指定verticle实例数.md)
+   * [指定verticle实例数](verticles/指定verticle实例数.md)
    * [配置verticle](配置verticle.md)
    * [在Verticle里访问环境变量。](在Verticle里访问环境变量.md)
    * [Verticle隔离组](Verticle隔离组.md)

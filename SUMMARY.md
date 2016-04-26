@@ -16,5 +16,5 @@
    * [verticle名称映射到一个verticle工厂的规则](verticle名称映射到一个verticle工厂的规则.md)
    * [怎么样找到Verticle Factories?](怎么样找到Verticle Factories.md)
    * [等待部署完成](等待部署完成.md)
-   * 取消 verticle 部署
+   * [取消 verticle 部署](取消 verticle 部署.md)
 

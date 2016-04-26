@@ -31,5 +31,5 @@
    * [理论](Event Bus/Event Bus理论.md)
    * [事件总线 API](Event Bus/事件总线 API.md)
    * [发布消息](Event Bus/发布消息.md)
-   * [发送消息](发送消息（EventBus）.md)
+   * [发送消息](Event Bus/发送消息（EventBus）.md)
 

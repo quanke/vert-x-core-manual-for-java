@@ -11,5 +11,5 @@
 * [Verticles](verticles.md)
    * [编写 Verticles](编写Verticles.md)
    * [异步Verticle启动和停止](异步Verticle启动和停止.md)
-   * Verticle类型
+   * [Verticle类型](Verticle类型.md)
 

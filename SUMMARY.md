@@ -45,5 +45,4 @@
    * [自动清理 Verticles](Event Bus/自动清理 Verticles .md)
 * [JSON](JSON/json.md)
 * [Buffers](Buffers.md)
-   * [写入缓冲区](Buffers/写入缓冲区.md)
 

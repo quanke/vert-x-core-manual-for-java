@@ -20,12 +20,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 #### 
 
-使用 Java API 访问环境变量和系统属性:
 
-```
-System.getProperty("prop");
-System.getenv("HOME");
-```
 
 #### Verticle隔离组
 

@@ -30,4 +30,5 @@
 * [事件总线（Event Bus）](事件总线（Event Bus）.md)
    * [理论](Event Bus理论.md)
    * [事件总线 API](事件总线 API.md)
+   * 发布消息
 

@@ -23,7 +23,7 @@
    * [Verticle隔离组](verticles/Verticle隔离组.md)
    * [高可用性（High Availability）](verticles/高可用性（High Availability）.md)
    * [从命令行运行 Verticles](verticles/从命令行运行 Verticles.md)
-   * [Vert.x 退出](Vert_x 退出.md)
+   * [Vert.x 退出](verticles/Vert_x 退出.md)
    * [Context对象](Context对象.md)
    * [执行定期和延迟的操作](执行定期和延迟的操作.md)
    * [Verticles 自动清理](Verticles 自动清理.md)

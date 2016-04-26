@@ -34,5 +34,5 @@
    * [发送消息](Event Bus/发送消息（EventBus）.md)
    * [消息设置headers](Event Bus/消息设置headers.md)
    * [消息顺序](Event Bus/消息顺序.md)
-   * 消息对象
+   * [消息对象](Event Bus/消息对象.md)
 

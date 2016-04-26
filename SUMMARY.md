@@ -28,7 +28,7 @@
    * [执行定期和延迟的操作](verticles/执行定期和延迟的操作.md)
    * [Verticles 自动清理](verticles/Verticles 自动清理.md)
 * [事件总线（Event Bus）](Event Bus/事件总线（Event Bus）.md)
-   * [理论](Event Bus理论.md)
+   * [理论](Event Bus/Event Bus理论.md)
    * [事件总线 API](事件总线 API.md)
    * [发布消息](发布消息.md)
    * [发送消息](发送消息（EventBus）.md)

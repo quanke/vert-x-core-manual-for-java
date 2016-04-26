@@ -17,4 +17,5 @@
    * [怎么样找到Verticle Factories?](怎么样找到Verticle Factories.md)
    * [等待部署完成](等待部署完成.md)
    * [取消 verticle 部署](取消 verticle 部署.md)
+   * 指定verticle实例数
 

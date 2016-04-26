@@ -20,5 +20,5 @@
    * [指定verticle实例数](指定verticle实例数.md)
    * [配置verticle](配置verticle.md)
    * [在Verticle里访问环境变量。](在Verticle里访问环境变量.md)
-   * Verticle隔离组
+   * [Verticle隔离组](Verticle隔离组.md)
 

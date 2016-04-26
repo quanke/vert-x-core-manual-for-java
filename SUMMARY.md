@@ -11,7 +11,7 @@
 * [Verticles](verticles/verticles.md)
    * [编写 Verticles](verticles/编写Verticles.md)
    * [异步Verticle启动和停止](verticles/异步Verticle启动和停止.md)
-   * [Verticle类型](Verticle类型.md)
+   * [Verticle类型](verticles/Verticle类型.md)
    * [以编程方式部署 verticles](以编程方式部署 verticles.md)
    * [verticle名称映射到一个verticle工厂的规则](verticle名称映射到一个verticle工厂的规则.md)
    * [怎么样找到Verticle Factories?](怎么样找到Verticle Factories.md)

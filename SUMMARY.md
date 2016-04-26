@@ -18,4 +18,5 @@
    * [等待部署完成](等待部署完成.md)
    * [取消 verticle 部署](取消 verticle 部署.md)
    * [指定verticle实例数](指定verticle实例数.md)
+   * 配置verticle
 

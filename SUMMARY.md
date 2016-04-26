@@ -15,7 +15,7 @@
    * [以编程方式部署 verticles](verticles/以编程方式部署 verticles.md)
    * [verticle名称映射到一个verticle工厂的规则](verticles/verticle名称映射到一个verticle工厂的规则.md)
    * [怎么样找到Verticle Factories?](verticles/怎么样找到Verticle Factories.md)
-   * [等待部署完成](等待部署完成.md)
+   * [等待部署完成](verticles/等待部署完成.md)
    * [取消 verticle 部署](取消 verticle 部署.md)
    * [指定verticle实例数](指定verticle实例数.md)
    * [配置verticle](配置verticle.md)

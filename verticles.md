@@ -16,69 +16,6 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### 
-
-
-#### 
-
-
-#### 
-
-
-
-#### 
-
-
-##### 一次性的计时器
-
-
-
-
-一个单次定时器有一定的延迟之后调用一个事件处理程序，以毫秒为单位表示。
-
-使用[setTimeout](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#setTimer-long-io.vertx.core.Handler-)方法启动计时器，
-
-```
-long timerID = vertx.setTimer(1000, id -> {
-  System.out.println("And one second later this is printed");
-});
-
-System.out.println("First this is printed");
-```
-
-返回值是一个唯一的定时器 id，以后可用于取消计时器。该处理器还通过定时器id。
-
-##### 定期计时器
-
-您还可以设置一个计时器来定期启动，通过使用[setPeriodic](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#setPeriodic-long-io.vertx.core.Handler-)方法。
-
-会有一个初始延迟等于周期。
-
-setPeriodic的返回值是一个唯一的计时器的 id (long)。如果以后计时器需要取消，可以使用id。
-
-传递到计时器事件处理程序的参数也是唯一的计时器的 id:
-
-请记住，计时器会定期触发。如果你的周期性处理需要相当长的时间进行，你的计时器事件可以运行连续或更糟的是: 堆积。
-
-
-在这种情况下，您应该考虑使用[setTimer](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#setTimer-long-io.vertx.core.Handler-)替代。一旦您处理已完成，您可以设置下一个计时器。
-
-```
-long timerID = vertx.setPeriodic(1000, id -> {
-  System.out.println("And every second this is printed");
-});
-
-System.out.println("First this is printed");
-```
-
-#### 取消计时器
-
-若要取消一个定期的计时器，请调用cancelTimer指定的计时器的 id。例如:
-
-```
-vertx.cancelTimer(timerID);
-```
-
 #### Verticles 自动清理
 
 如果您正在从 verticles 内创建的计时器，这些计时器将被自动关闭verticle undeployed。

@@ -19,7 +19,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-#### 等待部署完成
+#### 
 
 Verticle部署是异步的，可能部署完成后才返回。
 

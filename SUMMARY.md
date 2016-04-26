@@ -26,4 +26,5 @@
    * [Vert.x 退出](Vert_x 退出.md)
    * [Context对象](Context对象.md)
    * [执行定期和延迟的操作](执行定期和延迟的操作.md)
+   * Verticles 自动清理
 

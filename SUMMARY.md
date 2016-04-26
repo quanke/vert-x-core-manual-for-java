@@ -36,5 +36,5 @@
    * [消息顺序](Event Bus/消息顺序.md)
    * [消息对象](Event Bus/消息对象.md)
    * [确认消息/发送答复](Event Bus/确认消息/发送答复.md)
-   * 发送超时
+   * [发送超时](Event Bus/发送超时.md)
 

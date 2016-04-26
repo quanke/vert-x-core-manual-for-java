@@ -18,27 +18,6 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 
 
 
-
-#### 
-
-Verticle部署是异步的，可能部署完成后才返回。
-
-如果你想要部署完成后通知，您可以部署指定完成处理程序:
-
-```
-vertx.deployVerticle("com.mycompany.MyOrderProcessorVerticle", res -> {
-  if (res.succeeded()) {
-    System.out.println("Deployment id is: " + res.result());
-  } else {
-    System.out.println("Deployment failed!");
-  }
-});
-```
-
-如果部署成功，该完成包含部署 ID 字符串的结果传递给处理程序。
-
-如果你想要取消部署，可以稍后使用此部署 ID。
-
 #### 取消 verticle 部署
 
 部署可以通过[undeploy](http://vertx.io/docs/apidocs/io/vertx/core/Vertx.html#undeploy-java.lang.String-)取消部署.

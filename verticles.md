@@ -21,7 +21,7 @@ Verticles 是代码的得到部署和运行的 Vert.x 块。Verticles 可以使�
 #### 
 
 
-#### 指定verticle实例数
+#### 
 
 在部署时verticle使用verticle的名称，可以指定您要部署的verticle实例的数目:
 

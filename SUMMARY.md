@@ -22,5 +22,5 @@
    * [在Verticle里访问环境变量。](在Verticle里访问环境变量.md)
    * [Verticle隔离组](Verticle隔离组.md)
    * [高可用性（High Availability）](高可用性（High Availability）.md)
-   * 从命令行运行 Verticles
+   * [从命令行运行 Verticles](从命令行运行 Verticles.md)
 

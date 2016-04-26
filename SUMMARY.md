@@ -9,7 +9,7 @@
 * [黄金法则 — 不要阻塞事件循环](黄金法则_不要阻塞事件循环.md)
 * [运行阻塞代码](运行阻塞代码.md)
 * [Verticles](Verticles/verticles.md)
-   * [编写 Verticles](编写Verticles.md)
+   * [编写 Verticles](verticles/编写Verticles.md)
    * [异步Verticle启动和停止](异步Verticle启动和停止.md)
    * [Verticle类型](Verticle类型.md)
    * [以编程方式部署 verticles](以编程方式部署 verticles.md)

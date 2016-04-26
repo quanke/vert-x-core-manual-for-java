@@ -31,9 +31,9 @@
    * [理论](Event Bus/Event Bus理论.md)
    * [事件总线 API](Event Bus/事件总线 API.md)
    * [发布消息](Event Bus/发布消息.md)
+   * [消息顺序](Event Bus/消息顺序.md)
+       * 消息对象
    * [发送消息](Event Bus/发送消息（EventBus）.md)
    * [消息设置headers](Event Bus/消息设置headers.md)
    * 消息对象
-   * [消息顺序](Event Bus/消息顺序.md)
-       * 消息对象
 

@@ -19,7 +19,7 @@
    * [取消 verticle 部署](verticles/取消 verticle 部署.md)
    * [指定verticle实例数](verticles/指定verticle实例数.md)
    * [配置verticle](verticles/配置verticle.md)
-   * [在Verticle里访问环境变量。](在Verticle里访问环境变量.md)
+   * [在Verticle里访问环境变量。](verticles/在Verticle里访问环境变量.md)
    * [Verticle隔离组](Verticle隔离组.md)
    * [高可用性（High Availability）](高可用性（High Availability）.md)
    * [从命令行运行 Verticles](从命令行运行 Verticles.md)

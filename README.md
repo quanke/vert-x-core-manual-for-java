@@ -7,7 +7,7 @@
 
 阅读地址：http://vertx.quanke.name/
 
-x
+下载地址：
 
 源码在[github](https://github.com/eclipse/vert.x)上
 

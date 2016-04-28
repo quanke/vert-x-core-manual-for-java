@@ -353,7 +353,7 @@ response.write("hello world!");
 response.end();
 ```
 
-它也可以用字符串调用或称为中相同的方式write的缓冲区。在这种情况下它是用一个字符串或缓冲区依次调用结束不带任何参数调用写一样。例如:
+它也可以用字符串调用或和缓冲区相同的方式 write。在这种情况下它是用一个字符串或缓冲区依次调用结束不带任何参数调用写一样。例如:
 
 ```
 HttpServerResponse response = request.response();

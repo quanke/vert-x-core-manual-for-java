@@ -389,4 +389,5 @@ HttpServerResponse response = request.response();
 response.putHeader("content-type", "text/html").putHeader("other-header", "wibble");
 ```
 
-标题必须添加所有之前写入响应身体的任何部位。
+Headers 必须添加在所有写入response body之前。
+

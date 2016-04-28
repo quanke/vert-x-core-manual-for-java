@@ -9,7 +9,7 @@
 
 下载地址：https://www.gitbook.com/book/quanke/vert-x-core-manual-for-java
 
-源码地址：
+本书源码地址：
 
 源码在[github](https://github.com/eclipse/vert.x)上
 

@@ -369,4 +369,4 @@ response.end("hello world!");
 
 短连接在 response 结束时， `Vert.x` 将自动关闭 。
 
-保持连接的 Vert.x 默认情况下是不有自动的关闭。如果你希望保持连接在空闲时间后关闭，然后将配置setIdleTimeout.
+长连接的 Vert.x 默认情况下是不会自动的关闭。如果你希望连接保持到空闲时间后关闭，使用setIdleTimeout 方法配置.

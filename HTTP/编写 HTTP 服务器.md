@@ -408,7 +408,7 @@ response.setChunked(true);
 
 当在分块模式中你也可以写入 HTTP response 传输到response。实际上，这些实际上写入响应的最后块。
 
-若要添加到响应的拖车，他们将直接添加到trailers.
+若要添加trailers到response，直接添加到trailers.
 
 ```
 HttpServerResponse response = request.response();

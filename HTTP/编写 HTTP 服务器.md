@@ -391,3 +391,36 @@ response.putHeader("content-type", "text/html").putHeader("other-header", "wibbl
 
 Headers 必须添加在所有写入response body之前。
 
+##### 分块 HTTP 响应和传输
+
+Vert.x 支持HTTP 分块传输编码.
+
+表示输出的内容长度不能确定
+
+你投入的 HTTP 响应分块模式，如下所示:
+
+```
+HttpServerResponse response = request.response();
+response.setChunked(true);
+```
+
+默认值为非分块。在分块模式下，每个到write方法之一调用时，就会写出一个新的 HTTP 块。
+
+当在分块模式中你也可以写入 HTTP 响应拖车到响应。实际上，这些都写在反应，最后的一块。
+
+若要添加到响应的拖车，他们将直接添加到trailers.
+
+```
+HttpServerResponse response = request.response();
+response.setChunked(true);
+MultiMap trailers = response.trailers();
+trailers.set("X-wibble", "woobble").set("X-quux", "flooble");
+```
+
+或使用putTrailer.
+
+```
+HttpServerResponse response = request.response();
+response.setChunked(true);
+response.putTrailer("X-wibble", "woobble").putTrailer("X-quux", "flooble");
+```

@@ -7,6 +7,7 @@
 - 本书源码地址：https://github.com/quanke/vert-x-core-manual-for-java
 
 
+---
 源码在[github](https://github.com/eclipse/vert.x)上
 
 Vert.x Core提供的功能：

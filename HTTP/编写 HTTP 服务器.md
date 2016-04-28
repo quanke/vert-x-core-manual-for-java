@@ -397,7 +397,7 @@ Vert.x 支持HTTP 分块传输编码.
 
 表示输出的内容长度不能确定。
 
-put HTTP 响应分块模式，如下所示:
+把 HTTP response 设置为分块模式，如下所示:
 
 ```
 HttpServerResponse response = request.response();

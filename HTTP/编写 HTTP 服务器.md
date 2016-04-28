@@ -373,7 +373,7 @@ response.end("hello world!");
 
 ##### 设置 response headers
 
-可以将 HTTP 响应标头添加到响应他们将直接添加到headers:
+可以将 HTTP 响应标头添加到响应他们将直接添加到 headers:
 
 ```
 HttpServerResponse response = request.response();

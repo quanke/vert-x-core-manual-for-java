@@ -364,3 +364,9 @@ response.end("hello world!");
 
 ##### 关闭底层连接
 
+
+使用 [close](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerResponse.html#close--) 关闭底层的 TCP 连接.
+
+短连接在 response 结束时， `Vert.x` 将自动关闭 。
+
+保持连接的 Vert.x 默认情况下是不有自动的关闭。如果你希望保持连接在空闲时间后关闭，然后将配置setIdleTimeout.

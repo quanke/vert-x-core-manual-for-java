@@ -295,7 +295,7 @@ request.uploadHandler(upload -> {
 
 ##### 设置状态代码和消息
 
-响应的默认 HTTP 状态码是200，表示OK.
+response 的默认 HTTP 状态码是200，表示OK.
 
 使用[setStatusCode](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerResponse.html#setStatusCode-int-)来设置不同的代码。
 

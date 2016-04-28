@@ -5,6 +5,8 @@
 - 交流群：`231419585`
 
 
+阅读地址：http://vertx.quanke.name/
+
 
 源码在[github](https://github.com/eclipse/vert.x)上
 

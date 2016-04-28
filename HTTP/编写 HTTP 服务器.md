@@ -369,4 +369,4 @@ response.end("hello world!");
 
 短连接在 response 结束时， `Vert.x` 将自动关闭 。
 
-长连接的 Vert.x 默认情况下是不会自动的关闭。如果你希望连接保持到空闲时间后关闭，使用setIdleTimeout 方法配置.
+长连接的 Vert.x 默认情况下是不会自动的关闭。如果你希望连接保持到空闲时间后关闭，使用[setIdleTimeout](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerOptions.html#setIdleTimeout-int-) 方法配置.

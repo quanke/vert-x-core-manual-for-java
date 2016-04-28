@@ -345,7 +345,7 @@ response.write("hello world!", "UTF-16");
 
 这可以有以下几种方式:
 
-不带任何参数，响应是简单地结束。
+不带任何参数，response 是只是结束。
 
 ```
 HttpServerResponse response = request.response();

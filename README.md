@@ -1,4 +1,4 @@
-# Java API 版本的Vert.x Core 
+# Java API 版本的Vert.x Core 手册
 
 - 欢迎关注http://quanke.name/
 - Vert.x 3 Core手册 for Java 中文版 http://vertx.quanke.name/

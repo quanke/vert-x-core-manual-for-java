@@ -373,7 +373,7 @@ response.end("hello world!");
 
 ##### 设置 response headers
 
-可以将 HTTP response headers 添加到response中，直接添加到 headers:
+可以将 HTTP response headers 通过 response 直接添加到 headers:
 
 ```
 HttpServerResponse response = request.response();

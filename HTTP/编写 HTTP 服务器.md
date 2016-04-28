@@ -395,9 +395,9 @@ Headers 必须添加在所有写入response body之前。
 
 Vert.x 支持HTTP 分块传输编码.
 
-表示输出的内容长度不能确定
+表示输出的内容长度不能确定。
 
-你投入的 HTTP 响应分块模式，如下所示:
+put HTTP 响应分块模式，如下所示:
 
 ```
 HttpServerResponse response = request.response();

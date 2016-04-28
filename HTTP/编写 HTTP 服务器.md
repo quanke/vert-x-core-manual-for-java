@@ -404,9 +404,9 @@ HttpServerResponse response = request.response();
 response.setChunked(true);
 ```
 
-默认值为非分块。在分块模式下，每个到write方法之一调用时，就会写出一个新的 HTTP 块。
+默认值为非分块。在分块模式下，每次调用 [write](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerResponse.html#write-io.vertx.core.buffer.Buffer-) 调用时，就会写出一个新的 HTTP 块。
 
-当在分块模式中你也可以写入 HTTP 响应拖车到响应。实际上，这些都写在反应，最后的一块。
+当在分块模式中你也可以写入 HTTP response 传输到response。实际上，这些实际上写入响应的最后块。
 
 若要添加到响应的拖车，他们将直接添加到trailers.
 

@@ -495,3 +495,22 @@ vertx.createHttpServer().requestHandler(request -> {
 }).listen(8080);
 ```
 
+
+##### 注入responses
+
+服务器响应是一个WriteStream实例，所以你可以从任何ReadStream，例如AsyncFile， NetSocket， WebSocket或HttpServerRequest泵到它.
+
+这里是一个例子呼应回在付诸表决的任何方法的响应请求正文。它使用泵体，所以它会工作，即使如果 HTTP 请求正文是比任何一次可容纳在内存中的要大得多:
+
+```
+vertx.createHttpServer().requestHandler(request -> {
+  HttpServerResponse response = request.response();
+  if (request.method() == HttpMethod.PUT) {
+    response.setChunked(true);
+    Pump.pump(request, response).start();
+    request.endHandler(v -> response.end());
+  } else {
+    response.setStatusCode(400).end();
+  }
+}).listen(8080);
+```

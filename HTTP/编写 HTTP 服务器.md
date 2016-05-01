@@ -480,7 +480,7 @@ vertx.createHttpServer().requestHandler(request -> {
 }).listen(8080);
 ```
 
-如果您想要发送的文件偏移量从开始直到结束，您不需要提供长度，在这种情况下你可以这么做:
+如果想要发送的文件从偏移量开始到结束，您不需要提供长度，在这种情况下你可以这么做:
 
 ```
 vertx.createHttpServer().requestHandler(request -> {

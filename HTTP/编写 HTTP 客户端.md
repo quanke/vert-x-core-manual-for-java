@@ -17,6 +17,7 @@ HttpClient client = vertx.createHttpClient(options);
 
 
 #### 发出请求
+
 Http 客户端是非常灵活，您可以用它请求的各种方式。
 
 经常需要将许多请求发送到相同的主机/端口 http 客户端。为了避免您重复主机/端口，每次您发出请求，您可以配置客户端与默认主机/端口:

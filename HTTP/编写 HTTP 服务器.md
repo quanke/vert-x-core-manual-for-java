@@ -424,3 +424,71 @@ HttpServerResponse response = request.response();
 response.setChunked(true);
 response.putTrailer("X-wibble", "woobble").putTrailer("X-quux", "flooble");
 ```
+
+##### 直接从磁盘或类路径（classpath）提供文件服务
+
+如果你正在写一个 web 服务器，服务从磁盘文件的一种方法将打开它作为AsyncFile和泵到 HTTP 响应。
+
+或者你可以加载它一去使用readFile并直接写入响应。
+
+另外，Vert.x 提供了一种方法使您能够为服务文件从磁盘到在一个操作中的 HTTP 响应。凡由底层操作系统支持这可能会导致在 OS 中直接传输字节从文件到插座而不在所有复制通过用户空间。
+
+这通过使用sendFile，和是通常更有效，对于大文件，但可能较慢的小文件。
+
+这里是一个非常简单的 web 服务器，服务文件从文件系统使用 sendFile:
+
+```
+vertx.createHttpServer().requestHandler(request -> {
+  String file = "";
+  if (request.path().equals("/")) {
+    file = "index.html";
+  } else if (!request.path().contains("..")) {
+    file = request.path();
+  }
+  request.response().sendFile("web/" + file);
+}).listen(8080);
+```
+
+发送的文件是异步的可能无法完成之前一段时间后调用已返回。如果你想要时该文件已书面通知你可以使用sendFile
+
+注意
+如果你在使用的 HTTPS 它将复制通过用户空间时使用sendFile ，因为如果内核将数据直接从磁盘对套接字它复制不给我们机会应用任何加密。
+警告
+如果你要写 web 服务器直接使用 Vert.x 小心用户不能利用访问要为他们服务的目录之外的文件的路径。相反我们可能更安全，使用 Vert.x Web。
+需要服务只是部分的一个文件，说从某个给定的字节开始时，你可以通过做来达到这个:
+
+```
+vertx.createHttpServer().requestHandler(request -> {
+  long offset = 0;
+  try {
+    offset = Long.parseLong(request.getParam("start"));
+  } catch (NumberFormatException e) {
+    // error handling...
+  }
+
+  long end = Long.MAX_VALUE;
+  try {
+    end = Long.parseLong(request.getParam("end"));
+  } catch (NumberFormatException e) {
+    // error handling...
+  }
+
+  request.response().sendFile("web/mybigfile.txt", offset, end);
+}).listen(8080);
+```
+
+您不需要提供长度，如果您想要发送的文件偏移量从开始直到结束，在这种情况下你可以做:
+
+```
+vertx.createHttpServer().requestHandler(request -> {
+  long offset = 0;
+  try {
+    offset = Long.parseLong(request.getParam("start"));
+  } catch (NumberFormatException e) {
+    // error handling...
+  }
+
+  request.response().sendFile("web/mybigfile.txt", offset);
+}).listen(8080);
+```
+

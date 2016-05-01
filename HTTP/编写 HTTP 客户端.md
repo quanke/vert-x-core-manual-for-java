@@ -47,3 +47,115 @@ client.getNow("foo.othercompany.com", "/other-uri", response -> {
 });
 ```
 
+##### 没有请求body简单的请求
+
+通常情况下，你会想要与没有请求body的 HTTP 请求。这通常是 HTTP GET，OPTIONS和HEAD请求。
+
+这是 Vert.x http 客户端的最简单方法，使用前缀与Now的方法。例如[getNow](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpClient.html#getNow-int-java.lang.String-java.lang.String-io.vertx.core.Handler-)。
+
+这些方法创建HTTP请求，并在单个方法调用发送，让你提供一个处理程序，将与HTTP响应时调用它回来。
+
+```
+HttpClient client = vertx.createHttpClient();
+
+// Send a GET request
+client.getNow("/some-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+});
+
+// Send a GET request
+client.headNow("/other-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+});
+```
+
+
+##### 编写普通的requests
+
+在其他时候，你不知道你想要发送，直到运行时请求方法。这个用例我们提供通用请求方法例如request，允许您指定的 HTTP 方法在运行时:
+
+```
+HttpClient client = vertx.createHttpClient();
+
+client.request(HttpMethod.GET, "some-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+}).end();
+
+client.request(HttpMethod.POST, "foo-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+}).end("some-data");
+```
+
+##### 写作的请求体
+
+有时你会想要写请求有一个身体，或者也许你想要发送它之前写入请求标头。
+
+若要这样做你可以调用等post具体要求的方法之一或一般用途例如request的请求方法之一.
+
+这些方法不立即，发送请求，而是返回实例HttpClientRequest可用于写入请求正文或写标题。
+
+下面是一些例子的写作与身体的 POST 请求: m
+
+```
+HttpClient client = vertx.createHttpClient();
+
+HttpClientRequest request = client.post("some-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+});
+
+// Now do stuff with the request
+request.putHeader("content-length", "1000");
+request.putHeader("content-type", "text/plain");
+request.write(body);
+
+// Make sure the request is ended when you're done with it
+request.end();
+
+// Or fluently:
+
+client.post("some-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+}).putHeader("content-length", "1000").putHeader("content-type", "text/plain").write(body).end();
+
+// Or event more simply:
+
+client.post("some-uri", response -> {
+  System.out.println("Received response with status code " + response.statusCode());
+}).putHeader("content-type", "text/plain").end(body);
+```
+
+方法的存在将字符串写入在 utf-8 编码和在任何特定的编码并写入缓冲区:
+
+```
+request.write("some data");
+
+// Write string encoded in specific encoding
+request.write("some other data", "UTF-16");
+
+// Write a buffer
+Buffer buffer = Buffer.buffer();
+buffer.appendInt(123).appendLong(245l);
+request.write(buffer);
+```
+
+如果你只写入单个字符串或缓冲区的 HTTP 请求你可以写它和结束end函数单一调用中的请求。
+
+```
+request.end("some simple data");
+
+// Write buffer and end the request (send it) in a single call
+Buffer buffer = Buffer.buffer().appendDouble(12.34d).appendLong(432l);
+request.end(buffer);
+```
+
+当你写到一个请求时，write第一次调用会导致写入网络的请求标头。
+
+实际的写操作是异步的之前一段时间后调用已返回, 不是可能发生。
+
+非分块请求正文与 HTTP 请求需要要提供的Content-Length标头。
+
+因此，如果您不使用分块的 HTTP 然后之前，必须设置Content-Length标头写入请求，否则它将太迟了。
+
+如果您正在调用接受字符串或缓冲区的end方法之一然后 Vert.x 将自动计算并设置Content-Length标头在写请求正文之前。
+
+如果您使用的 HTTP 分块Content-Length标头不是必需的所以你不需要计算的前期的大小。

@@ -452,7 +452,7 @@ vertx.createHttpServer().requestHandler(request -> {
 发送的文件是异步的,可能无法马上返回。如果你想要该文件写入完成通知，可以使用[sendFile](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerResponse.html#sendFile-java.lang.String-io.vertx.core.Handler-)
 
 注意
-> 如果你在使用的 HTTPS 它将复制通过用户空间时使用sendFile ，因为如果内核将数据直接从磁盘对套接字它复制不给我们机会应用任何加密。
+> 如果你在使用的 HTTPS 使用sendFile会通过用户空间 ，因为如果内核将数据直接从磁盘对套接字,没有机会给应用任何加密。
 
 警告
 

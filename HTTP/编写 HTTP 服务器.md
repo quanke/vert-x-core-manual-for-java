@@ -458,7 +458,7 @@ vertx.createHttpServer().requestHandler(request -> {
 
 > 如果你要直接使用 Vert.x 写 web 服务器，小心用户访问其他文件路径，使用 Vert.x Web可能更安全，。
 
-需要服务只是部分的一个文件，说从某个给定的字节开始时，你可以通过做来达到这个:
+当只需要一个文件片段，可以给定从某字节开发，可以通过下面达到：
 
 ```
 vertx.createHttpServer().requestHandler(request -> {
@@ -480,7 +480,7 @@ vertx.createHttpServer().requestHandler(request -> {
 }).listen(8080);
 ```
 
-您不需要提供长度，如果您想要发送的文件偏移量从开始直到结束，在这种情况下你可以做:
+如果您想要发送的文件偏移量从开始直到结束，您不需要提供长度，在这种情况下你可以这么做:
 
 ```
 vertx.createHttpServer().requestHandler(request -> {

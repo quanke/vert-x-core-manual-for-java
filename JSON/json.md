@@ -84,4 +84,4 @@ Boolean boolVal = array.getBoolean(2);
 
 ##### JSON 数组转换为字符串
 
-使用[encode](http://vertx.io/docs/apidocs/io/vertx/core/json/JsonArray.html#encode--)字符串形式对数组进行编码。
+使用[encode](http://vertx.io/docs/apidocs/io/vertx/core/json/JsonArray.html#encode--)方法将数组编码成字符串形式。

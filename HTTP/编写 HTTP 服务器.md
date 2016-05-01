@@ -525,11 +525,11 @@ Vert.x 带有 HTTP 压缩开箱即用支持。
 
 这可以同时处理支持 HTTP 压缩的客户端和那些不支持HTTP 压缩的客户端。
 
-若要启用压缩使用可以配置它与setCompressionSupported.
+若要启用压缩，使用[setCompressionSupported](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerOptions.html#setCompressionSupported-boolean-)配置。
 
 默认情况下不启用压缩。
 
-当启用 HTTP 压缩服务器将检查是否客户端包括Accept-Encoding的报头，它包含受支持的按压。常用的有紧缩和 gzip。两者都支持 Vert.x。
+当启用 HTTP 压缩，服务器将检查客户端是否包括Accept-Encoding的报头，它包含支持的压缩方式。常用的有deflate和 gzip([Web服务器处理HTTP压缩之gzip、deflate压缩](http://quanke.name/2016/05/01/Web服务器处理HTTP压缩之gzip、deflate压缩/))。 Vert.x 两者都支持。
 
 如果服务器将自动压缩与一个支持压缩响应正文中的并将其发送回客户端，就找到这种头。
 

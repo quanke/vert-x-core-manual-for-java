@@ -20,7 +20,7 @@ HttpClient client = vertx.createHttpClient(options);
 
 Http 客户端非常灵活，可以用各种方式请求。
 
-经常需要将许多请求发送到相同的主机/端口 http 客户端。为了避免您重复主机/端口，每次您发出请求，您可以配置客户端与默认主机/端口:
+http 客户端经常需要将许多请求发送到相同的主机/端口 。为了避免每次发出请求需要重复配置主机/端口，您可以配置客户端的默认主机/端口:
 
 ```
 HttpClientOptions options = new HttpClientOptions().setDefaultHost("wibble.com");
@@ -31,7 +31,7 @@ client.getNow("/some-uri", response -> {
 });
 ```
 
-或者如果你发现自己赚不到港与同一客户不同主机的请求可以只会指定主机/端口，当正在做着请求。
+或者可以指定单个请求的主机/端口。
 
 ```
 HttpClient client = vertx.createHttpClient();
@@ -47,4 +47,3 @@ client.getNow("foo.othercompany.com", "/other-uri", response -> {
 });
 ```
 
-这两种方法的指定主机/端口的所有不同的方式与客户端请求的支持。

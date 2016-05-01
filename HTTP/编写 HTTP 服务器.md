@@ -427,7 +427,7 @@ response.putTrailer("X-wibble", "woobble").putTrailer("X-quux", "flooble");
 
 ##### 直接从磁盘或类路径（classpath）提供文件服务
 
-如果你正在写一个 web 服务器，服务从磁盘文件的一种方法将打开它作为AsyncFile和泵到 HTTP 响应。
+如果你正在编写一个Web服务器，一个方法来服务从磁盘上的文件将是打开它作为一个AsyncFile并注入到HTTP响应。
 
 或者你可以加载它一去使用readFile并直接写入响应。
 

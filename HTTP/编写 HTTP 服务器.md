@@ -500,7 +500,7 @@ vertx.createHttpServer().requestHandler(request -> {
 
 服务器response是一个[WriteStream](http://vertx.io/docs/apidocs/io/vertx/core/streams/WriteStream.html)实例，可以从任何[ReadStream](http://vertx.io/docs/apidocs/io/vertx/core/streams/ReadStream.html)注入，例如[AsyncFile](http://vertx.io/docs/apidocs/io/vertx/core/file/AsyncFile.html)，[NetSocket](http://vertx.io/docs/apidocs/io/vertx/core/net/NetSocket.html)，[WebSocket](http://vertx.io/docs/apidocs/io/vertx/core/http/WebSocket.html)或[HttpServerRequest](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpServerRequest.html)。
 
-这里是一个例子呼应回在付诸表决的任何方法的响应请求正文。它使用泵体，所以它会工作，即使如果 HTTP 请求正文是比任何一次可容纳在内存中的要大得多:
+这是一个PUT请求body返回响应的例子，使用pump，即使HTTP请求body比内存大的多，也能正常工作：
 
 ```
 vertx.createHttpServer().requestHandler(request -> {

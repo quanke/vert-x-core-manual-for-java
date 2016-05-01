@@ -456,7 +456,7 @@ vertx.createHttpServer().requestHandler(request -> {
 
 警告
 
-> 如果你要写 web 服务器直接使用 Vert.x 小心用户不能利用访问要为他们服务的目录之外的文件的路径。相反我们可能更安全，使用 Vert.x Web。
+> 如果你要直接使用 Vert.x 写 web 服务器，小心用户访问其他文件路径，使用 Vert.x Web可能更安全，。
 
 需要服务只是部分的一个文件，说从某个给定的字节开始时，你可以通过做来达到这个:
 

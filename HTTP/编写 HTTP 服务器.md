@@ -516,6 +516,7 @@ vertx.createHttpServer().requestHandler(request -> {
 ```
 
 #### HTTP 压缩
+
 Vert.x 带有 HTTP 压缩开箱即用支持。
 
 这意味着你能够在他们被发送回客户端之前自动压缩的响应正文。

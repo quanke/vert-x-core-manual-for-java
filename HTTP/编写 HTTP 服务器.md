@@ -435,7 +435,7 @@ response.putTrailer("X-wibble", "woobble").putTrailer("X-quux", "flooble");
 
 对于大文件使用sendFile，通常更有效，但小文件可能较慢。
 
-这里是一个非常简单的 web 服务器，服务文件从文件系统使用 sendFile:
+下面是使用sendFile，提供了一个非常简单的Web服务器:
 
 ```
 vertx.createHttpServer().requestHandler(request -> {

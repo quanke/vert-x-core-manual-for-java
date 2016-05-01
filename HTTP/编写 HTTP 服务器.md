@@ -427,9 +427,9 @@ response.putTrailer("X-wibble", "woobble").putTrailer("X-quux", "flooble");
 
 ##### 直接从磁盘或类路径（classpath）提供文件服务
 
-如果你正在编写一个Web服务器，一个方法来服务从磁盘上的文件将是打开它作为一个AsyncFile并注入到HTTP响应。
+如果你正在编写一个Web服务器，使用AsyncFile打开磁盘上的文件并注入到HTTP response。
 
-或者你可以加载它一去使用readFile并直接写入响应。
+或者你可以一气呵成，使用[readFile](http://vertx.io/docs/apidocs/io/vertx/core/file/FileSystem.html#readFile-java.lang.String-io.vertx.core.Handler-)加载并直接写入响应。
 
 另外，Vert.x 提供了一种方法使您能够为服务文件从磁盘到在一个操作中的 HTTP 响应。凡由底层操作系统支持这可能会导致在 OS 中直接传输字节从文件到插座而不在所有复制通过用户空间。
 

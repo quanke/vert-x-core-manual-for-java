@@ -431,7 +431,7 @@ response.putTrailer("X-wibble", "woobble").putTrailer("X-quux", "flooble");
 
 或者你可以一气呵成，使用[readFile](http://vertx.io/docs/apidocs/io/vertx/core/file/FileSystem.html#readFile-java.lang.String-io.vertx.core.Handler-)加载并直接写入响应。
 
-另外，Vert.x 提供了一种方法，使您能够为服务文件从磁盘到在一个操作中的 HTTP 响应。凡由底层操作系统支持这可能会导致在 OS 中直接传输字节从文件到插座而不在所有复制通过用户空间。
+另外，Vert.x 提供了一种方法，可以从磁盘或者文件系统操作HTTP response。由底层操作系统支持，这可能在OS中直接从文件到套接字传送字节，而无需通过用户空间（user-space）复制。
 
 对于大文件使用sendFile，通常更有效，但小文件可能较慢。
 

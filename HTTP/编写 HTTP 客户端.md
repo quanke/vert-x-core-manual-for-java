@@ -92,7 +92,7 @@ client.request(HttpMethod.POST, "foo-uri", response -> {
 
 可以使用[post](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpClient.html#post-int-java.lang.String-java.lang.String-)方法，或者普通的[request](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpClient.html#request-io.vertx.core.http.HttpMethod-int-java.lang.String-java.lang.String-)方法
 
-这些方法不立即，发送请求，而是返回实例HttpClientRequest可用于写入请求正文或写标题。
+这些方法发送的请求不会立即返回，而是返回HttpClientRequest实例，用户写入body和header。
 
 下面是一些例子的写作与身体的 POST 请求: m
 

@@ -138,7 +138,7 @@ buffer.appendInt(123).appendLong(245l);
 request.write(buffer);
 ```
 
-如果你只写入单个字符串或缓冲区的 HTTP 请求你可以写它和结束end函数单一调用中的请求。
+如果你的 HTTP 请求只写入单个字符串或缓冲区，你可以写它和结束end函数单一调用中的请求。
 
 ```
 request.end("some simple data");

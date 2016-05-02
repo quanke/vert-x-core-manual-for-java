@@ -72,7 +72,7 @@ client.headNow("/other-uri", response -> {
 
 ##### 编写普通的requests
 
-在其他时候，你不知道你想要发送，直到运行时请求方法。这个用例我们提供通用请求方法例如request，允许您指定的 HTTP 方法在运行时:
+不知道想要发送请求方法，运行时才知道。这个用例我们提供通用请求方法例如[request](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpClient.html#request-io.vertx.core.http.HttpMethod-int-java.lang.String-java.lang.String-)，允许您指定的 HTTP 方法在运行时:
 
 ```
 HttpClient client = vertx.createHttpClient();

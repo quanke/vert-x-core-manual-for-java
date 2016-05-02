@@ -86,7 +86,7 @@ client.request(HttpMethod.POST, "foo-uri", response -> {
 }).end("some-data");
 ```
 
-##### 编写请求bodies
+##### 编写请求主体（bodies）
 
 有时你会想要写请求有一个身体，或者也许你想要发送它之前写入请求标头。
 

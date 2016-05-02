@@ -88,9 +88,9 @@ client.request(HttpMethod.POST, "foo-uri", response -> {
 
 ##### 编写请求主体（bodies）
 
-有时你会想要写请求有一个身体，或者也许你想要发送它之前写入请求标头。
+有时想要在requests里含有body，或者想写请求的headers。
 
-若要这样做你可以调用等post具体要求的方法之一或一般用途例如request的请求方法之一.
+可以使用[post](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpClient.html#post-int-java.lang.String-java.lang.String-)方法，或者普通的[request](http://vertx.io/docs/apidocs/io/vertx/core/http/HttpClient.html#request-io.vertx.core.http.HttpMethod-int-java.lang.String-java.lang.String-)方法
 
 这些方法不立即，发送请求，而是返回实例HttpClientRequest可用于写入请求正文或写标题。
 

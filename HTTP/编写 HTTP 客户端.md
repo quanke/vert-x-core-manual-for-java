@@ -124,7 +124,7 @@ client.post("some-uri", response -> {
 }).putHeader("content-type", "text/plain").end(body);
 ```
 
-方法的存在将字符串写入在 utf-8 编码和在任何特定的编码并写入缓冲区:
+默认utf-8编码：
 
 ```
 request.write("some data");

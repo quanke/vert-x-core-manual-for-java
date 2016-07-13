@@ -2,7 +2,7 @@
 
 - 欢迎关注http://quanke.name/
 - 交流群：`231419585`
-- 阅读地址：http://vertx.quanke.name/
+- 阅读地址：http://vertx.help/
 - 下载地址：https://www.gitbook.com/book/quanke/vert-x-core-manual-for-java
 - 本书源码地址：https://github.com/quanke/vert-x-core-manual-for-java
 

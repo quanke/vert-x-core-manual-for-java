@@ -2,6 +2,7 @@
     "plugins": [
         "layout",
         "baidu",
+        "edit-link",
         "tbfed-pagefooter"
     ],
     "pluginsConfig": {
@@ -12,7 +13,10 @@
         },
         "tbfed-pagefooter": {
             "copyright":"Copyright &copy quanke.name 2016",
-            "modify_label": "该文件修订时间：", "modify_format": "YYYY-MM-DD HH:mm:ss" } 
+            "modify_label": "该文件修订时间：", "modify_format": "YYYY-MM-DD HH:mm:ss" } ,
+        "edit-link": { 
+            "base": "https://github.com/USER/REPO/edit/BRANCH", "label": "Edit This Page" }
+
 
     },
     "links": {

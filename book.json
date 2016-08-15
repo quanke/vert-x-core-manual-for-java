@@ -1,6 +1,9 @@
 {
-    "links" : { "sidebar" : { "Home" : "http://quanke.name" } } 
-
+    "links" : { 
+        "sidebar" : {
+             "Home" : "http://quanke.name" 
+        } 
+    },
     "plugins": [
         "layout",
         "baidu"

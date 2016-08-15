@@ -7,7 +7,9 @@
         "baidu",
 
         "edit-link",
-
+        
+        "github",
+        
         "tbfed-pagefooter"
 
     ],
@@ -19,11 +21,9 @@
         "footerPath": "layouts/footer.html",
 
         "baidu": {
-
             "token": "2d97e54587fe0a988606550c9b115a6b"
-
         },
-
+        
         "tbfed-pagefooter": {
 
             "copyright":"Copyright &copy quanke.name 2016",
@@ -35,7 +35,11 @@
             "base": "https://github.com/quanke/vert-x-core-manual-for-java/edit/master", "label": "Edit This Page" }
 
     },
-
+    
+   "github": {
+            "url": "https://github.com/quanke/vert-x-core-manual-for-java"
+        },
+        
     "links": {
 
         "sidebar": {

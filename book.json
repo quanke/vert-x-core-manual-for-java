@@ -8,8 +8,6 @@
 
         "edit-link",
         
-        "github",
-        
         "tbfed-pagefooter"
 
     ],
@@ -34,9 +32,6 @@
             "base": "https://github.com/quanke/vert-x-core-manual-for-java/edit/master", "label": "Edit This Page" }
 
     },
-   "github": {
-            "url": "https://github.com/quanke/vert-x-core-manual-for-java"
-        },
     "links": {
 
         "sidebar": {

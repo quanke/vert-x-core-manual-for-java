@@ -31,15 +31,12 @@
             "modify_label": "该文件修订时间：", "modify_format": "YYYY-MM-DD HH:mm:ss" } ,
 
         "edit-link": { 
-
             "base": "https://github.com/quanke/vert-x-core-manual-for-java/edit/master", "label": "Edit This Page" }
 
     },
-    
    "github": {
             "url": "https://github.com/quanke/vert-x-core-manual-for-java"
         },
-        
     "links": {
 
         "sidebar": {

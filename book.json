@@ -32,7 +32,7 @@
 
         "edit-link": { 
 
-            "base": "https://github.com/USER/REPO/edit/BRANCH", "label": "Edit This Page" }
+            "base": "https://github.com/quanke/vert-x-core-manual-for-java/edit/master", "label": "Edit This Page" }
 
     },
 
